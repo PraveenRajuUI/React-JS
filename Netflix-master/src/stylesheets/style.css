@@ -1,0 +1,153 @@
+html,
+body {
+    background-color: #141414;
+}
+
+.header {
+    font-size: 16px;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    /* background: #333; */
+    color: #ffffff;
+    bottom: 0;
+    margin: auto;
+    text-align: left;
+    /* transform: rotate(-180deg); */
+    /* writing-mode: vertical-rl; */
+    z-index: 12;
+    width: 100%;
+    line-height: 32px;
+}
+
+.empty-label {
+    font-size: 20px;
+    color: grey
+}
+
+.empty {
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    line-height: 12em;
+    text-align: center;
+    right: 0;
+}
+
+.row .col {
+    /* padding-left: 28px; */
+}
+
+.tile {
+    width: 166px;
+    height: 230px;
+    min-width: 160px;
+    display: inline-block;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 2px;
+    position: relative;
+    transition: border-color .3s ease;
+    border: 1px solid rgba(100, 100, 100, 0.4);
+    user-select: none;
+    text-align: center;
+}
+
+.tile button.button {
+    position: absolute;
+    /* width: 30px; */
+    right: 4px;
+    bottom: 10px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    display: none;
+    transition: all .3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+    background: #dddddd;
+    /* transition: opacity, box-shadow, font-size .3s ease; */
+}
+
+.tile img {
+    margin: 0 auto;
+    max-width: 100%;
+    position: absolute;
+    margin: auto;
+    /* padding: 6px; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+button.button:active,
+button.button:focus,
+button.list[disabled] {
+    font-size: 18px;
+    opacity: 1;
+    color: red !important;
+    display: block;
+}
+
+.tile:hover,
+.tile:active,
+.tile:focus {
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+}
+
+.tile:hover>button.button,
+.tile:active>button.button,
+.tile:focus>button.button,
+.tile:hover>button.button {
+    display: block;
+}
+
+/* button.button:hover,
+button[disabled] {
+    box-shadow: 1px 3px 8px rgb(0, 0, 0);
+    color: black;
+    font-size: 18px;
+} */
+
+ul {
+    margin-bottom: 0px;
+    list-style-type: none;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px;
+    margin-left: -3px;
+    overflow-x: auto;
+    /* border-bottom: 1px solid rgba(51, 51, 51, 0.8); */
+    min-height: 182.6px;
+    position: relative;
+}
+
+.row {
+    background-color: #141414;
+}
+
+li {
+    display: inline;
+}
+
+sup {
+    margin-left: 5px;
+    top: 0.3em;
+    left: 0em;
+    right: -0.5em;
+    background: red;
+    border-radius: 50%;
+    padding: 5px 2px;
+    width: 3px;
+    height: 1px;
+}
